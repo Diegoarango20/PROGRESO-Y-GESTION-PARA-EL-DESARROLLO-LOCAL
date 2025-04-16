@@ -1,0 +1,54 @@
+
+/* Estilo para el header */
+.header {
+  display: flex;
+  justify-content: space-between;  /* Espacio entre el logo y el menú */
+  align-items: center;            /* Alinea verticalmente el logo y el menú */
+  padding: 20px;
+  background: linear-gradient(to right, #ff7cbf, #9b59b6); /* Gradiente de rosado a morado */
+  height: 70px;  /* Asegúrate de que el header tenga altura */
+}
+
+/* Estilo para el logo */
+.header__logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para el menú de navegación */
+.nav-menu {
+  display: flex;                  /* Flexbox para organizar los ítems en una fila */
+  justify-content: flex-start;    /* Alinea los ítems a la izquierda */
+  align-items: flex-end;          /* Alinea verticalmente los ítems */
+  height: 100%;          
+}
+
+/* Estilo para la lista dentro del menú */
+.nav-menu__list {
+  list-style: none;               /* Elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;                  /* Los ítems del menú estarán en una fila horizontal */
+}
+
+/* Estilo para cada ítem del menú */
+.nav-menu__item {
+  padding: 10px 20px;             /* Espaciado dentro de los ítems */
+}
+
+/* Estilo para los enlaces del menú */
+.nav-menu__link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;                   /* Color blanco para los enlaces */
+  text-decoration: none;          /* Elimina el subrayado de los enlaces */
+  font-weight: bold;              /* Hace el texto más grueso (negrita) */
+  font-size: 12px;                /* Tamaño de la fuente, puedes ajustarlo si lo deseas */
+  display: block;                 /* Hace que el enlace ocupe todo el espacio dentro del ítem */
+  transition: color 0.3s ease;    /* Suaviza el cambio de color cuando se pasa el mouse */
+}
+
+/* Cambiar el color del enlace cuando el usuario pase el mouse */
+.nav-menu__link:hover {
+  color: #f39c12;                 /* Cambia a un color dorado al pasar el mouse */
+}
+

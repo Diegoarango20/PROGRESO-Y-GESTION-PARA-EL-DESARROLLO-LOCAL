@@ -1,0 +1,71 @@
+/* Reseteo básico de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página con el gradiente que mencionaste */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7cbf, #9b59b6);  /* Degradado rosado a morado */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja del formulario (login-box) */
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;  /* Máximo tamaño para el formulario */
+}
+
+/* Título del formulario */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo para los grupos de entrada (inputs) */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de inicio de sesión */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #9b59b6;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #8e44ad;
+}

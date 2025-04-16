@@ -1,18 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="shortcut icon" href="../img/logoPestaña.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Iniciar sesión</title>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-        </ul>
-    </nav>
-</body>
 
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Iniciar sesión</h2>
+            
+            <form action="procesar_login.php" method="POST">
+
+                <!-- Campo de Usuario -->
+                <div class="input-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <!-- Campo de Contraseña -->
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <!-- Botón de inicio de sesión -->
+                <button type="submit" class="login-btn">Iniciar sesión</button>
+
+          
+
+            </form>
+        </div>
+    </div>
+
+</body>
 </html>
